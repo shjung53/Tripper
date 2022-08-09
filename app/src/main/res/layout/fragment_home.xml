@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.tripper.tripper.ui.main.home.HomeFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,12 +12,12 @@
             android:id="@+id/home_logo_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tripper"
+            android:text="@string/app_name"
             android:fontFamily="@font/godo_b_400"
             android:textSize="24sp"
             android:textColor="@color/main"
-            android:layout_marginTop="@dimen/margin_15dp"
-            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginTop="@dimen/home_default_margin"
+            android:layout_marginStart="@dimen/home_logo_margin"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />
@@ -29,8 +27,8 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_logo_icon"
-            android:layout_marginEnd="@dimen/margin_10dp"
-            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/home_logo_margin"
+            android:layout_marginTop="@dimen/home_default_margin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             />
@@ -85,8 +83,8 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/home_menu_tl"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="@dimen/home_tab_h"
+            android:layout_marginTop="@dimen/home_default_margin"
             app:layout_constraintTop_toBottomOf="@id/home_logo_tv"
             app:layout_constraintStart_toStartOf="parent"
             app:tabIndicatorHeight="2dp"
@@ -95,8 +93,10 @@
             app:tabSelectedTextColor="@color/lightBlack"
             app:tabTextColor="@color/darkGray"
             android:background="@drawable/tab_indicator_round_unselect"
-            app:tabTextAppearance="@style/Widget.tablayout_font"
-            app:tabRippleColor="@null"/> //터치효과 없애기
+            app:tabTextAppearance="@style/Widget.tabLayout_font"
+            app:tabRippleColor="@null"
+            />
+        //터치효과 없애기
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/home_menu_vp"
