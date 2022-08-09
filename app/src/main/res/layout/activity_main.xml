@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tripper.tripper.MainActivity"
     >
 
     <FrameLayout
@@ -20,7 +19,7 @@
         android:id="@+id/main_bnv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemIconSize="25dp"
+        app:itemIconSize="@dimen/btm_nav_item_size"
         app:itemIconTint="@drawable/btm_item_select"
         app:itemTextColor="@drawable/btm_item_select"
         app:labelVisibilityMode="labeled"
@@ -29,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu"
         app:itemRippleColor="@null"
-        android:background="@drawable/round_top"
+        android:background="@drawable/btm_nav_design"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

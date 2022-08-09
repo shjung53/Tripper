@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="small_button">25dp</dimen>
+    <dimen name="transport_button">30dp</dimen>
+    <dimen name="appBar_button">45dp</dimen>
+    <dimen name="bottom_tab_button">65dp</dimen>
+    <dimen name="edittext_underline_padding_bottom">15dp</dimen>
+    <dimen name="transport_radius">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="btm_nav_item_size">25dp</dimen>
+
+<!--    home-->
+    <dimen name="home_tab_h">34dp</dimen>
+    <dimen name="home_default_margin">15dp</dimen>
+    <dimen name="home_logo_margin">20dp</dimen>
+
+
+</resources>
