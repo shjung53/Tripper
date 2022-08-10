@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.tripper.R
 import com.example.tripper.databinding.ActivityMainBinding
+import com.example.tripper.ui.main.home.BlockFragment
 import com.example.tripper.ui.main.home.HomeFragment
 
 
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.mapActivity -> {
 //                    val intent = Intent(this, MapActivity::class.java)
 //                    startActivity(intent)
+//                    현재 미구현상태로 block처리
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.main_frm, BlockFragment())
                         .commitAllowingStateLoss()

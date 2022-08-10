@@ -14,8 +14,12 @@
 
 <!--    home-->
     <dimen name="home_tab_h">34dp</dimen>
-    <dimen name="home_default_margin">15dp</dimen>
-    <dimen name="home_logo_margin">20dp</dimen>
+    <dimen name="home_appBar_side_margin">20dp</dimen>
+    <dimen name="home_appBar_vertical_margin">20dp</dimen>
+    <dimen name="home_tab_vertical_margin">15dp</dimen>
+
+<!--    feed-->
+    <dimen name="item_feed_side_margin">15dp</dimen>
 
 
 </resources>

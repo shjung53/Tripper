@@ -51,7 +51,7 @@
                     android:layout_marginTop="@dimen/margin_20dp"
                     android:layout_marginEnd="@dimen/margin_20dp"
                     android:scaleType="center"
-                    android:src="@drawable/ic_emptyheart_white_on_49dp" />
+                    android:src="@drawable/ic_empty_heart_white_on_49dp" />
 
             </RelativeLayout>
 

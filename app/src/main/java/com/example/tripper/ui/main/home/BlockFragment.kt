@@ -5,16 +5,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.tripper.databinding.FragmentFollowingFeedBinding
+import com.example.tripper.databinding.FragmentBlockBinding
 
-class FollowingFeedFragment(): Fragment() {
-    lateinit var binding: FragmentFollowingFeedBinding
+class BlockFragment: Fragment() {
+
+    lateinit var binding: FragmentBlockBinding
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentFollowingFeedBinding.inflate(inflater, container, false)
-        return super.onCreateView(inflater, container, savedInstanceState)
+        binding = FragmentBlockBinding.inflate(inflater, container, false)
+
+        return binding.root
     }
 }
