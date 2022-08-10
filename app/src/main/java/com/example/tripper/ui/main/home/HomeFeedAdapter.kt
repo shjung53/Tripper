@@ -13,18 +13,18 @@ import com.example.tripper.FeedData
 import com.example.tripper.R
 import com.example.tripper.databinding.ItemFeedBinding
 
-class HomeFeedRVAdapter(context: Context) : ListAdapter<FeedData, HomeFeedRVAdapter.ViewHolder>(diffUtil) {
+class HomeFeedRVAdapter(val context: Context) : ListAdapter<FeedData, HomeFeedRVAdapter.ViewHolder>(diffUtil) {
 
-    interface MyItemClickListener{
-        fun onProfileClick(holder: ViewHolder)
-        fun onItemClickCV(holder: ViewHolder)
-        fun onHeartClick(holder: ViewHolder)
+    interface FeedClickListener{
+        fun profileClick(holder: ViewHolder)
+        fun feedClick(holder: ViewHolder)
+        fun likeClick(holder: ViewHolder)
     }
 
-    private lateinit var mItemClickListener: MyItemClickListener
+    private lateinit var feedClickListener: FeedClickListener
 
-    fun setMyClickListener(itemClickListener: MyItemClickListener){
-        mItemClickListener = itemClickListener
+    fun setFeedClickListener(pFeedClickListener: FeedClickListener){
+        feedClickListener = pFeedClickListener
     }
 
 
@@ -37,12 +37,14 @@ class HomeFeedRVAdapter(context: Context) : ListAdapter<FeedData, HomeFeedRVAdap
     override fun onBindViewHolder(holder: HomeFeedRVAdapter.ViewHolder, position: Int) {
         val feedData = getItem(position) as FeedData
         holder.bind(feedData)
-        mItemClickListener.onHeartClick(holder)
+        feedClickListener.likeClick(holder)
     }
 
 
-    inner class ViewHolder(context: Context, private val binding: ItemFeedBinding): RecyclerView.ViewHolder(binding.root){
+    inner class ViewHolder(private val binding: ItemFeedBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(feedData: FeedData){
+
+//            뷰홀더 세팅
             binding.itemFeedTitleTv.text = feedData.title
             binding.itemFeedIdTv.text = feedData.nickName
             Glide.with(binding.itemFeedPictureIv).load(feedData.thumImgUrl)
@@ -85,11 +87,13 @@ class HomeFeedRVAdapter(context: Context) : ListAdapter<FeedData, HomeFeedRVAdap
                 binding.itemFeedHeartOffIv.visibility = View.VISIBLE
                 binding.itemFeedHeartOnIv.visibility = View.GONE
             }
+
+//            뷰홀더 클릭리스너
             binding.itemFeedProfileCiv.setOnClickListener{
-                mItemClickListener.onProfileClick(holder)
+                feedClickListener.profileClick(this)
             }
             binding.itemFeedCv.setOnClickListener{
-                mItemClickListener.onItemClickCV(holder)
+                feedClickListener.feedClick(this)
             }
         }
     }
