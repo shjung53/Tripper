@@ -12,14 +12,29 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="btm_nav_item_size">25dp</dimen>
 
-<!--    home-->
+<!--    activity_home-->
     <dimen name="home_tab_h">34dp</dimen>
     <dimen name="home_appBar_side_margin">20dp</dimen>
     <dimen name="home_appBar_vertical_margin">20dp</dimen>
     <dimen name="home_tab_vertical_margin">15dp</dimen>
 
-<!--    feed-->
+<!--    item_feed-->
     <dimen name="item_feed_side_margin">15dp</dimen>
+    <dimen name="item_feed_profile_img_size">48dp</dimen>
+    <dimen name="item_feed_profile_top_margin">8dp</dimen>
+    <dimen name="item_feed_id_size">12sp</dimen>
+    <dimen name="item_feed_ic_like_margin">15dp</dimen>
+    <dimen name="item_feed_title_size">18sp</dimen>
+    <dimen name="item_feed_title_top_margin">15dp</dimen>
+    <dimen name="item_feed_title_start_margin">20dp</dimen>
+    <dimen name="item_feed_hashtag_size">12sp</dimen>
+    <dimen name="item_feed_score_top_margin">13dp</dimen>
+    <dimen name="item_feed_score_padding">25dp</dimen>
+    <dimen name="item_feed_score_size">8sp</dimen>
+    <dimen name="item_feed_score_gap_margin">3dp</dimen>
+    <dimen name="item_feed_hash_start_margin">20dp</dimen>
+    <dimen name="item_feed_hashtag_btm_margin">20dp</dimen>
+    <dimen name="item_feed_title_hashtag_gap_margin">7dp</dimen>
 
 
 </resources>

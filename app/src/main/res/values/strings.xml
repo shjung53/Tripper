@@ -17,6 +17,12 @@
     <string name="map_search">지도 검색</string>
     <string name="write_trip">여행 쓰기</string>
     <string name="my_profile">내 프로필</string>
-    <string name="app_name">Tripper</string>
+
+
+<!--    피드-->
+    <string name="defaultId">id</string>
+    <string name="item_feed_default_title">여행 다녀왔습니다!</string>
+    <string name="item_feed_default_hashtag">#여행 #여기저기</string>
+    <string name="item_feed_default_score">아직 평점이 없어요</string>
 
 </resources>
