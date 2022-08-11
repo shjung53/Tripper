@@ -3,9 +3,11 @@ package com.example.tripper.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.os.PersistableBundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.tripper.R
+import com.example.tripper.`object`.MainViewModel
 import com.example.tripper.databinding.ActivityMainBinding
 import com.example.tripper.ui.main.home.BlockFragment
 import com.example.tripper.ui.main.home.HomeFragment
@@ -14,6 +16,7 @@ import com.example.tripper.ui.main.home.HomeFragment
 class MainActivity : AppCompatActivity() {
 
     private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val mainViewModel : MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)

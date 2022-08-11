@@ -56,4 +56,14 @@ dependencies {
 
 //    원형이미지
     implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+// ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+// ViewModel utilities for Compose
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1"
+// LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+
+//    뭔지 모르지만 이거 덕분에 by viewModels()가 됨
+    implementation "androidx.fragment:fragment-ktx:1.5.2"
 }
