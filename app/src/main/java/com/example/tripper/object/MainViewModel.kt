@@ -6,6 +6,8 @@ import androidx.lifecycle.ViewModel
 import java.util.*
 
 class MainViewModel: ViewModel() {
+
+//    날짜
     private val _datesData = MutableLiveData<ArrayList<Date>>()
     val datesData: LiveData<ArrayList<Date>> get() = _datesData
 

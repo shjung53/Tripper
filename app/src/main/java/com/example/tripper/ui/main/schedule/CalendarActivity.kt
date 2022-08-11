@@ -1,6 +1,8 @@
 package com.example.tripper.ui.main.schedule
 
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.tripper.`object`.MainViewModel
 import com.example.tripper.databinding.ActivityCalendarBinding
 import java.text.SimpleDateFormat
 import java.util.*
@@ -21,6 +23,7 @@ class CalendarActivity : AppCompatActivity() {
     private val monthRange = IntRange(5,6)
 
     private val dayRange = IntRange(8,9)
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
