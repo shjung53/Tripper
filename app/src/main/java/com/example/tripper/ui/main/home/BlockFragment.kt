@@ -15,7 +15,7 @@ class BlockFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentBlockBinding.inflate(inflater, container, false)
 
         return binding.root

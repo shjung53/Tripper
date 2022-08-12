@@ -3,6 +3,6 @@
     <style name="Widget.tabLayout_font"
         parent="Widget.Design.BottomNavigationView">
         <item name="fontFamily">@font/nanumbarungothic_400</item>
-        <item name="android:textSize">@dimen/text_12sp</item>
+        <item name="android:textSize">12sp</item>
     </style>
 </resources>

@@ -25,4 +25,18 @@
     <string name="item_feed_default_hashtag">#여행 #여기저기</string>
     <string name="item_feed_default_score">아직 평점이 없어요</string>
 
+<!--    장소추가-->
+    <string name="activity_add_place_guide_text">장소검색(두 글자 이상 입력)</string>
+    <string name="addPlace">장소추가</string>
+
+<!--    계정 설정-->
+    <string name="withdrawal">회원 탈퇴</string>
+    <string name="account">계정</string>
+
+<!--    캘린더-->
+    <string name="activity_calendar_top_bar_text">여행 정보 입력</string>
+    <string name="activity_calendar_guide_text_date">여행 날짜를 알려주세요</string>
+    <string name="activity_calendar_guide_text_transport">이동수단을 알려주세요</string>
+    <string name="next">다음</string>
+
 </resources>

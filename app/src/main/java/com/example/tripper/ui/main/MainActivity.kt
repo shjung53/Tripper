@@ -5,13 +5,14 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.tripper.R
 import com.example.tripper.`object`.MainViewModel
 import com.example.tripper.databinding.ActivityMainBinding
 import com.example.tripper.ui.main.home.BlockFragment
 import com.example.tripper.ui.main.home.HomeFragment
-
+import com.example.tripper.ui.main.schedule.CalendarActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +22,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(binding.root)
+
+
 
 
 //        메인화면 내비게이션
@@ -48,12 +51,12 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
 
-                R.id.myInfoFragment -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, MyInfoFragment())
-                        .commitAllowingStateLoss()
-                    return@setOnItemSelectedListener true
-                }
+//                R.id.myInfoFragment -> {
+//                    supportFragmentManager.beginTransaction()
+//                        .replace(R.id.main_frm, MyInfoFragment())
+//                        .commitAllowingStateLoss()
+//                    return@setOnItemSelectedListener true
+//                }
 
             }
             false
@@ -68,5 +71,4 @@ class MainActivity : AppCompatActivity() {
 //            .commitAllowingStateLoss()
 //    }
 
-}
 }
