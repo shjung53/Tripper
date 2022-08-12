@@ -39,4 +39,19 @@
     <string name="activity_calendar_guide_text_transport">이동수단을 알려주세요</string>
     <string name="next">다음</string>
 
+<!--    댓글-->
+    <string name="comment">댓글</string>
+    <string name="default_count">0</string>
+    <string name="activity_comment_guide_text">댓글쓰기</string>
+    <string name="enroll">등록</string>
+
+<!--    좋아요-->
+    <string name="like">좋아요</string>
+
+<!--    로그인-->
+    <string name="app_full_name">모두의 여행 이야기 , 트리퍼</string>
+    <string name="kakao_login">카카오톡으로 계속하기</string>
+    <string name="activity_login_skip_login">로그인 건너뛰기</string>
+
+
 </resources>

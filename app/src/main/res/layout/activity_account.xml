@@ -7,7 +7,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/account_top_bar_cv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/top_bar_size"
+        android:layout_height="@dimen/top_bar_h"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:elevation="0dp"

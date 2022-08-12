@@ -8,9 +8,11 @@
 <!--    everywhere-->
 
     <dimen name="basic_horizontal_margin">20dp</dimen>
-    <dimen name="top_bar_size">45dp</dimen>
+    <dimen name="top_bar_h">45dp</dimen>
     <dimen name="top_bar_text_size">20sp</dimen>
     <dimen name="top_bar_contents_gap">20dp</dimen>
+    <dimen name="top_bar_count_text_size">16sp</dimen>
+    <dimen name="top_bar_count_gap">16sp</dimen>
     <dimen name="bottom_btn_h">65dp</dimen>
     <dimen name="bottom_btn_text_size">20sp</dimen>
 
@@ -54,6 +56,26 @@
     <dimen name="activity_calendar_cornerRadius">40dp</dimen>
     <dimen name="activity_calendar_transport_h">35dp</dimen>
     <dimen name="activity_calendar_transport_gap">5dp</dimen>
+
+<!--    activity_comment-->
+    <dimen name="activity_comment_reply_indicator_h">40dp</dimen>
+    <dimen name="activity_comment_reply_indicator_text_size">12sp</dimen>
+    <dimen name="activity_comment_horizontal_margin">20dp</dimen>
+    <dimen name="activity_comment_comment_h">72dp</dimen>
+    <dimen name="activity_comment_guide_text_size">16sp</dimen>
+    <dimen name="activity_comment_et_start_margin">12dp</dimen>
+    <dimen name="activity_comment_et_end_margin">15dp</dimen>
+    <dimen name="activity_comment_post_btn_w">45dp</dimen>
+    <dimen name="activity_comment_post_btn_h">30dp</dimen>
+    <dimen name="activity_comment_post_tv_size">12sp</dimen>
+
+<!--    activity_login-->
+    <dimen name="activity_login_app_name_size">20sp</dimen>
+    <dimen name="activity_login_horizontal_margin">30dp</dimen>
+    <dimen name="activity_login_btn_h">56dp</dimen>
+    <dimen name="activity_login_ic_kakao_size">32dp</dimen>
+    <dimen name="activity_kakao_login_text_size">18sp</dimen>
+
 
 
 </resources>

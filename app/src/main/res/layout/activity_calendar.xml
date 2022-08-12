@@ -21,7 +21,7 @@
     <TextView
         android:id="@+id/calendar_appBar_tv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/top_bar_size"
+        android:layout_height="@dimen/top_bar_h"
         android:text="@string/activity_calendar_top_bar_text"
         android:fontFamily="@font/nanumbarungothic_400"
         android:textSize="@dimen/top_bar_text_size"

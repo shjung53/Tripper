@@ -3,14 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.main.myInfo.followList.FollowingActivity">
+    android:layout_height="match_parent">
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/following_top_bar_cv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_45dp"
+        android:layout_height="@dimen/top_bar_h"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:outlineProvider="none">
@@ -19,10 +18,10 @@
 
         <ImageView
             android:id="@+id/following_back_iv"
-            android:layout_width="25dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/basic_horizontal_margin"
             android:src="@drawable/ic_back_25dp" />
 
         <TextView
@@ -34,7 +33,7 @@
             android:text="팔로잉"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_20sp" />
+            android:textSize="@dimen/top_bar_text_size" />
 
     </androidx.cardview.widget.CardView>
 
@@ -44,8 +43,8 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/following_top_bar_cv"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp"
-        tools:listitem="@layout/item_following" />
+        tools:listitem="@layout/item_following"/>
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

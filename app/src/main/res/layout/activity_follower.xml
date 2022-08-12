@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.main.myInfo.followList.FollowerActivity">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/follower_top_bar_cv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/button_45dp"
+        android:layout_height="@dimen/top_bar_h"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:outlineProvider="none">
 
         <ImageView
             android:id="@+id/follower_back_iv"
-            android:layout_width="25dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/basic_horizontal_margin"
             android:src="@drawable/ic_back_25dp" />
 
         <TextView
@@ -32,7 +31,7 @@
             android:text="팔로워"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_20sp" />
+            android:textSize="@dimen/top_bar_text_size" />
 
     </androidx.cardview.widget.CardView>
 

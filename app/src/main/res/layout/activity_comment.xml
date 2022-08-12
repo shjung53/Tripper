@@ -10,7 +10,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/comment_appBar_cv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/appBar_button"
+        android:layout_height="@dimen/top_bar_h"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:src="@drawable/ic_back_25dp"
             android:layout_gravity="start"
-            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/basic_horizontal_margin"
             />
         <LinearLayout
             android:layout_width="wrap_content"
@@ -32,22 +32,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="댓글"
+            android:text="@string/comment"
             android:fontFamily="@font/nanumbarungothic_400"
             android:textColor="@color/black"
-            android:textSize="@dimen/text_20sp"
+            android:textSize="@dimen/top_bar_text_size"
             android:layout_gravity="center"
             />
             <TextView
                 android:id="@+id/comment_num_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:text="@string/default_count"
                 android:fontFamily="@font/nanumbarungothic_400"
                 android:textColor="@color/main"
-                android:textSize="@dimen/text_16sp"
+                android:textSize="@dimen/top_bar_count_text_size"
                 android:layout_gravity="center"
-                android:layout_marginStart="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/top_bar_count_gap"
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@id/comment_appBar_cv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/comment_comment_cv"
+        app:layout_constraintBottom_toTopOf="@id/comment_comment_cl"
         tools:listitem="@layout/item_comment"
         android:overScrollMode="never"
         />
@@ -69,8 +69,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/comment_reply_indicator_cv"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toTopOf="@id/comment_comment_cv"
+        android:layout_height="@dimen/activity_comment_reply_indicator_h"
+        app:layout_constraintBottom_toTopOf="@id/comment_comment_cl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/gray"
@@ -90,10 +90,10 @@
             android:layout_height="wrap_content"
             android:text="\'닉네임\'님에게 답글"
             android:fontFamily="@font/nanumbarungothic_400"
-            android:textSize="@dimen/text_12sp"
+            android:textSize="@dimen/activity_comment_reply_indicator_text_size"
             android:textColor="@color/lightBlack"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginStart="@dimen/activity_comment_horizontal_margin"
             android:layout_weight="1"
             />
         <ImageView
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_x_black_13dp"
-            android:layout_marginEnd="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/activity_comment_horizontal_margin"
             />
 
         </LinearLayout>
@@ -111,10 +111,10 @@
 
 
 <!--    댓글 달기 -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/comment_comment_cv"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/comment_comment_cl"
         android:layout_width="match_parent"
-        android:layout_height="72dp"
+        android:layout_height="@dimen/activity_comment_comment_h"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,43 +125,46 @@
             android:layout_width="2.5dp"
             android:layout_height="22dp"
             android:background="@color/main"
-            android:layout_marginStart="20dp"
-            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/activity_comment_horizontal_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="@id/comment_comment_cl"
+            app:layout_constraintBottom_toBottomOf="parent"
             />
 
         <EditText
             android:id="@+id/comment_comment_et"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="댓글쓰기"
+            android:hint="@string/activity_comment_guide_text"
             android:fontFamily="@font/nanumbarungothic_l_300"
-            android:textSize="16sp"
+            android:textSize="@dimen/activity_comment_guide_text_size"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:layout_marginStart="32dp"
-            android:layout_marginEnd="80dp"
+            android:layout_marginStart="@dimen/activity_comment_et_start_margin"
+            android:layout_marginEnd="@dimen/activity_comment_et_end_margin"
             android:background="@null"
-            android:layout_gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/comment_line_v"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/comment_post_tv"
             />
 
         <TextView
             android:id="@+id/comment_post_tv"
-            android:layout_width="45dp"
-            android:layout_height="30dp"
-            android:text="등록"
+            android:layout_width="@dimen/activity_comment_post_btn_w"
+            android:layout_height="@dimen/activity_comment_post_btn_h"
+            android:text="@string/enroll"
             android:background="@drawable/border_stroke"
             android:gravity="center"
             android:fontFamily="@font/nanumbarungothic_l_300"
-            android:textSize="@dimen/text_12sp"
+            android:textSize="@dimen/activity_comment_post_tv_size"
             android:textColor="@color/black"
-            android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/margin_20dp"
-            android:layout_marginTop="21dp"
+            android:layout_marginEnd="@dimen/activity_comment_horizontal_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             />
 
-        
-        
-        
-    </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
