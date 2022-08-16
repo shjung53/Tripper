@@ -53,5 +53,8 @@
     <string name="kakao_login">카카오톡으로 계속하기</string>
     <string name="activity_login_skip_login">로그인 건너뛰기</string>
 
+<!--    지도 검색-->
+    <string name="searchArea">여행 지역 검색</string>
+
 
 </resources>

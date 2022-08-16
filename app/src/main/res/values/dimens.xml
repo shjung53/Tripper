@@ -11,6 +11,7 @@
     <dimen name="top_bar_h">45dp</dimen>
     <dimen name="top_bar_text_size">20sp</dimen>
     <dimen name="top_bar_contents_gap">20dp</dimen>
+    <dimen name="top_bar_small_contents_gap">10dp</dimen>
     <dimen name="top_bar_count_text_size">16sp</dimen>
     <dimen name="top_bar_count_gap">16sp</dimen>
     <dimen name="bottom_btn_h">65dp</dimen>
@@ -76,6 +77,15 @@
     <dimen name="activity_login_ic_kakao_size">32dp</dimen>
     <dimen name="activity_kakao_login_text_size">18sp</dimen>
 
+<!--    activity_map-->
+    <dimen name="activity_map_guide_text_size">16sp</dimen>
+    <dimen name="activity_map_ic_search_end_margin">15dp</dimen>
+    <dimen name="activity_map_vertical_margin">20dp</dimen>
+    <dimen name="activity_map_ic_relocation_size">60dp</dimen>
+    <dimen name="activity_map_ic_relocation_margin">15dp</dimen>
+    <dimen name="activity_map_feed_h">145dp</dimen>
+
+<!--    activity_post-->
 
 
 </resources>
