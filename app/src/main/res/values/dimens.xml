@@ -108,7 +108,17 @@
     <dimen name="activity_post_btm_rate_text_size">10sp</dimen>
     <dimen name="activity_post_map_horizontal_margin">15dp</dimen>
 
-<!--    activity_profileEdit-->
+    <!--    activity_profileEdit-->
+    <dimen name="activity_profileEdit_picture_w">184dp</dimen>
+    <dimen name="activity_profileEdit_picture_h">180dp</dimen>
+    <dimen name="activity_profileEdit_profile_size">180dp</dimen>
+    <dimen name="activity_profileEdit_nickname_size">20sp</dimen>
+    <dimen name="activity_profileEdit_profile_nickname_gap">25dp</dimen>
+    <dimen name="activity_profileEdit_duplication_check_w">80dp</dimen>
+    <dimen name="activity_profileEdit_duplication_check_h">35dp</dimen>
+    <dimen name="activity_profileEdit_nickname_available_size">12sp</dimen>
+    <dimen name="activity_profileEdit_error_text_top_margin">10dp</dimen>
+    <dimen name="activity_profileEdit_guide_text_size">12sp</dimen>
 
 
 </resources>

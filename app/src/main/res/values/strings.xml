@@ -57,6 +57,14 @@
     <string name="searchArea">여행 지역 검색</string>
     <string name="default_rate">아직 평점이 없어요</string>
     <string name="before_rating">어땠나요?</string>
+    <string name="profile_setting">프로필 설정</string>
+
+<!--    프로필 설정-->
+    <string name="nickname_guide">닉네임 (최대 10글자)</string>
+    <string name="duplication_check">중복확인</string>
+    <string name="available_nickname">사용가능한 닉네임입니다.</string>
+    <string name="profile_setting_guide">프로필 사진과 닉네임을 설정해 주세요</string>
+    <string name="complete">완료</string>
 
 
 </resources>

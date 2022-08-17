@@ -12,6 +12,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+<!--        뒤로가기 버튼-->
         <ImageView
             android:id="@+id/profile_edit_back_iv"
             android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="프로필 설정"
+            android:text="@string/profile_setting"
             android:fontFamily="@font/nanumbarungothic_400"
             android:textColor="@color/black"
             android:textSize="@dimen/top_bar_text_size"
@@ -38,8 +39,8 @@
     <!--    프로필 사진 수정-->
     <RelativeLayout
         android:id="@+id/profile_edit_picture_rl"
-        android:layout_width="184dp"
-        android:layout_height="180dp"
+        android:layout_width="@dimen/activity_profileEdit_picture_w"
+        android:layout_height="@dimen/activity_profileEdit_picture_h"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +49,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_edit_picture_civ"
-            android:layout_width="180dp"
-            android:layout_height="180dp"
+            android:layout_width="@dimen/activity_profileEdit_profile_size"
+            android:layout_height="@dimen/activity_profileEdit_profile_size"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_empty_profile"
             app:civ_circle_background_color="@color/lightGray" />
@@ -69,9 +70,9 @@
         android:id="@+id/profile_edit_nickname_et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="닉네임 (최대 10글자)"
+        android:hint="@string/nickname_guide"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="@dimen/activity_profileEdit_nickname_size"
         android:textColor="@color/lightBlack"
         android:fontFamily="@font/nanumbarungothic_400"
         android:textColorHint="@color/darkGray"
@@ -81,14 +82,14 @@
         app:layout_constraintEnd_toStartOf="@id/profile_edit_duplication_check_off_tv"
         android:layout_marginHorizontal="30dp"
         android:background="@null"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/activity_profileEdit_profile_nickname_gap"
         />
 
     <TextView
         android:id="@+id/profile_edit_duplication_check_off_tv"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:text="중복확인"
+        android:layout_width="@dimen/activity_profileEdit_duplication_check_w"
+        android:layout_height="@dimen/activity_profileEdit_duplication_check_h"
+        android:text="@string/duplication_check"
         android:fontFamily="@font/nanumbarungothic_400"
         android:textColor="@color/white"
         android:background="@drawable/duplication_check_off"
@@ -101,9 +102,9 @@
 
     <TextView
         android:id="@+id/profile_edit_duplication_check_on_tv"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
-        android:text="중복확인"
+        android:layout_width="@dimen/activity_profileEdit_duplication_check_w"
+        android:layout_height="@dimen/activity_profileEdit_duplication_check_h"
+        android:text="@string/duplication_check"
         android:fontFamily="@font/nanumbarungothic_400"
         android:textColor="@color/white"
         android:background="@drawable/duplication_check_on"
@@ -131,22 +132,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/red"
-        android:textSize="12sp"
+        android:textSize="@dimen/activity_profileEdit_nickname_available_size"
         android:textStyle="bold"
         android:fontFamily="@font/nanumbarungothic_400"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/activity_profileEdit_error_text_top_margin"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"/>
 
     <TextView
-        android:id="@+id/profile_edit_possible_tv"
+        android:id="@+id/profile_edit_available_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="사용가능한 닉네임입니다."
+        android:text="@string/available_nickname"
         android:fontFamily="@font/nanumbarungothic_400"
-        android:textSize="@dimen/text_12sp"
+        android:textSize="@dimen/activity_profileEdit_nickname_available_size"
         android:textColor="@color/lightBlack"
         app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"
         app:layout_constraintStart_toStartOf="parent"
@@ -159,9 +160,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="프로필 사진과 닉네임을 설정해 주세요"
+        android:text="@string/profile_setting_guide"
         android:fontFamily="@font/nanumbarungothic_400"
-        android:textSize="@dimen/text_12sp"
+        android:textSize="@dimen/activity_profileEdit_guide_text_size"
         android:textColor="@color/darkGray"
         app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"
         app:layout_constraintStart_toStartOf="parent"
@@ -174,12 +175,12 @@
     <TextView
         android:id="@+id/profile_edit_complete_tv"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/bottom_tab_button"
+        android:layout_height="@dimen/bottom_btn_h"
         android:background="@color/gray"
-        android:text="완료"
+        android:text="@string/complete"
         android:textColor="@color/white"
         android:fontFamily="@font/nanumbarungothic_400"
-        android:textSize="@dimen/text_20sp"
+        android:textSize="@dimen/bottom_btn_text_size"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
