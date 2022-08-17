@@ -1,54 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
 
     <!--    상단 앱바-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="@dimen/top_bar_h"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-<!--        뒤로가기 버튼-->
+        <!--        뒤로가기 버튼-->
         <ImageView
-            android:id="@+id/profile_edit_back_iv"
+            android:id="@+id/profileEdit_back_iv"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_back_25dp"
-            android:layout_marginStart="@dimen/basic_horizontal_margin"
             android:layout_gravity="start"
-            />
-
+            android:layout_marginStart="@dimen/basic_horizontal_margin"
+            android:src="@drawable/ic_back_25dp" />
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/profile_setting"
             android:fontFamily="@font/nanumbarungothic_400"
-            android:textColor="@color/black"
-            android:textSize="@dimen/top_bar_text_size"
             android:gravity="center"
-            />
+            android:text="@string/profile_setting"
+            android:textColor="@color/black"
+            android:textSize="@dimen/top_bar_text_size" />
     </androidx.cardview.widget.CardView>
 
 
     <!--    프로필 사진 수정-->
     <RelativeLayout
-        android:id="@+id/profile_edit_picture_rl"
+        android:id="@+id/profileEdit_picture_rl"
         android:layout_width="@dimen/activity_profileEdit_picture_w"
         android:layout_height="@dimen/activity_profileEdit_picture_h"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2">
 
         <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/profile_edit_picture_civ"
+            android:id="@+id/profileEdit_picture_civ"
             android:layout_width="@dimen/activity_profileEdit_profile_size"
             android:layout_height="@dimen/activity_profileEdit_profile_size"
             android:scaleType="centerCrop"
@@ -56,7 +53,7 @@
             app:civ_circle_background_color="@color/lightGray" />
 
         <ImageView
-            android:id="@+id/profile_edit_camera_iv"
+            android:id="@+id/profileEdit_camera_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -67,125 +64,119 @@
 
     <!--    닉네임 수정-->
     <EditText
-        android:id="@+id/profile_edit_nickname_et"
+        android:id="@+id/profileEdit_nickname_et"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/nickname_guide"
-        android:textAlignment="center"
-        android:textSize="@dimen/activity_profileEdit_nickname_size"
-        android:textColor="@color/lightBlack"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:textColorHint="@color/darkGray"
-        android:maxLength="10"
-        app:layout_constraintTop_toBottomOf="@id/profile_edit_picture_rl"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/profile_edit_duplication_check_off_tv"
         android:layout_marginHorizontal="30dp"
-        android:background="@null"
         android:layout_marginTop="@dimen/activity_profileEdit_profile_nickname_gap"
-        />
+        android:background="@null"
+        android:fontFamily="@font/nanumbarungothic_400"
+        android:hint="@string/nickname_guide"
+        android:inputType="text"
+        android:maxLength="10"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlack"
+        android:textColorHint="@color/darkGray"
+        android:textSize="@dimen/activity_profileEdit_nickname_size"
+        app:layout_constraintEnd_toStartOf="@id/profileEdit_duplication_check_off_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileEdit_picture_rl" />
 
     <TextView
-        android:id="@+id/profile_edit_duplication_check_off_tv"
+        android:id="@+id/profileEdit_duplication_check_off_tv"
         android:layout_width="@dimen/activity_profileEdit_duplication_check_w"
         android:layout_height="@dimen/activity_profileEdit_duplication_check_h"
-        android:text="@string/duplication_check"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:textColor="@color/white"
         android:background="@drawable/duplication_check_off"
-        app:layout_constraintTop_toTopOf="@id/profile_edit_nickname_et"
-        app:layout_constraintBottom_toBottomOf="@id/profile_edit_nickname_et"
-        app:layout_constraintEnd_toEndOf="@id/profile_edit_line_v"
+        android:fontFamily="@font/nanumbarungothic_400"
         android:gravity="center"
+        android:text="@string/duplication_check"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/profileEdit_nickname_et"
+        app:layout_constraintEnd_toEndOf="@id/profileEdit_line_v"
         app:layout_constraintHorizontal_bias="1"
-        />
+        app:layout_constraintTop_toTopOf="@id/profileEdit_nickname_et" />
 
     <TextView
-        android:id="@+id/profile_edit_duplication_check_on_tv"
+        android:id="@+id/profileEdit_duplication_check_on_tv"
         android:layout_width="@dimen/activity_profileEdit_duplication_check_w"
         android:layout_height="@dimen/activity_profileEdit_duplication_check_h"
-        android:text="@string/duplication_check"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:textColor="@color/white"
         android:background="@drawable/duplication_check_on"
-        app:layout_constraintTop_toTopOf="@id/profile_edit_nickname_et"
-        app:layout_constraintBottom_toBottomOf="@id/profile_edit_nickname_et"
-        app:layout_constraintEnd_toEndOf="@id/profile_edit_line_v"
+        android:fontFamily="@font/nanumbarungothic_400"
         android:gravity="center"
-        app:layout_constraintHorizontal_bias="1"
+        android:text="@string/duplication_check"
+        android:textColor="@color/white"
         android:visibility="gone"
-        />
+        app:layout_constraintBottom_toBottomOf="@id/profileEdit_nickname_et"
+        app:layout_constraintEnd_toEndOf="@id/profileEdit_line_v"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toTopOf="@id/profileEdit_nickname_et" />
 
     <View
-        android:id="@+id/profile_edit_line_v"
+        android:id="@+id/profileEdit_line_v"
         android:layout_width="match_parent"
         android:layout_height="5dp"
-        android:background="@drawable/line"
-        android:backgroundTint="@color/main"
-        app:layout_constraintTop_toBottomOf="@id/profile_edit_nickname_et"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="8dp"
-        />
+        android:background="@drawable/line"
+        android:backgroundTint="@color/main"
+        app:layout_constraintTop_toBottomOf="@id/profileEdit_nickname_et" />
 
     <TextView
-        android:id="@+id/profile_edit_error_tv"
+        android:id="@+id/profileEdit_error_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_profileEdit_error_text_top_margin"
+        android:fontFamily="@font/nanumbarungothic_400"
         android:textColor="@color/red"
         android:textSize="@dimen/activity_profileEdit_nickname_available_size"
         android:textStyle="bold"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:layout_marginTop="@dimen/activity_profileEdit_error_text_top_margin"
         android:visibility="gone"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileEdit_line_v" />
 
     <TextView
-        android:id="@+id/profile_edit_available_tv"
+        android:id="@+id/profileEdit_available_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/available_nickname"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:textSize="@dimen/activity_profileEdit_nickname_available_size"
-        android:textColor="@color/lightBlack"
-        app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:gravity="center"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/nanumbarungothic_400"
+        android:gravity="center"
+        android:text="@string/available_nickname"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/activity_profileEdit_nickname_available_size"
         android:visibility="gone"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileEdit_line_v" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/profile_setting_guide"
-        android:fontFamily="@font/nanumbarungothic_400"
-        android:textSize="@dimen/activity_profileEdit_guide_text_size"
-        android:textColor="@color/darkGray"
-        app:layout_constraintTop_toBottomOf="@id/profile_edit_line_v"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
-        />
+        android:fontFamily="@font/nanumbarungothic_400"
+        android:text="@string/profile_setting_guide"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/activity_profileEdit_guide_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileEdit_line_v" />
 
     <!--    하단 탭 버튼-->
 
     <TextView
-        android:id="@+id/profile_edit_complete_tv"
+        android:id="@+id/profileEdit_complete_tv"
         android:layout_width="match_parent"
         android:layout_height="@dimen/bottom_btn_h"
         android:background="@color/gray"
+        android:enabled="false"
+        android:fontFamily="@font/nanumbarungothic_400"
+        android:gravity="center"
         android:text="@string/complete"
         android:textColor="@color/white"
-        android:fontFamily="@font/nanumbarungothic_400"
         android:textSize="@dimen/bottom_btn_text_size"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:enabled="false"
-        />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
