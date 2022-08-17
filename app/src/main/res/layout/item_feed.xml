@@ -108,7 +108,7 @@
                 android:layout_marginStart="@dimen/item_feed_title_start_margin"
                 app:layout_constraintTop_toBottomOf="@+id/item_feed_relative_layout"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/item_feed_score_iv"
+                app:layout_constraintEnd_toStartOf="@id/item_feed_rate_iv"
                 app:layout_constraintHorizontal_bias="0"
                 android:maxLines="1"
                 android:ellipsize="end"
@@ -135,12 +135,12 @@
                 />
 
             <ImageView
-                android:id="@+id/item_feed_score_iv"
+                android:id="@+id/item_feed_rate_iv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/item_feed_score_top_margin"
-                android:paddingStart="@dimen/item_feed_score_padding"
-                android:paddingEnd="@dimen/item_feed_score_padding"
+                android:layout_marginTop="@dimen/item_feed_rate_top_margin"
+                android:paddingStart="@dimen/item_feed_rate_padding"
+                android:paddingEnd="@dimen/item_feed_rate_padding"
                 android:src="@drawable/ic_gray_smile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/item_feed_relative_layout"
@@ -148,17 +148,17 @@
                 />
 
             <TextView
-                android:id="@+id/item_feed_score_tv"
+                android:id="@+id/item_feed_rate_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/item_feed_default_score"
-                android:textSize="@dimen/item_feed_score_size"
+                android:text="@string/item_feed_default_rate"
+                android:textSize="@dimen/item_feed_rate_size"
                 android:textColor="@color/darkGray"
                 android:fontFamily="@font/nanumbarungothic_400"
-                android:layout_marginTop="@dimen/item_feed_score_gap_margin"
-                app:layout_constraintTop_toBottomOf="@+id/item_feed_score_iv"
-                app:layout_constraintStart_toStartOf="@id/item_feed_score_iv"
-                app:layout_constraintEnd_toEndOf="@+id/item_feed_score_iv" />
+                android:layout_marginTop="@dimen/item_feed_rate_gap_margin"
+                app:layout_constraintTop_toBottomOf="@+id/item_feed_rate_iv"
+                app:layout_constraintStart_toStartOf="@id/item_feed_rate_iv"
+                app:layout_constraintEnd_toEndOf="@+id/item_feed_rate_iv" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

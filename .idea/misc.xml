@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/btm_item_select.xml" value="0.209" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_back_25dp.xml" value="0.215" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_comment.xml" value="0.165" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_empty_heart_white_49dp.xml" value="0.259" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_good_29dp.xml" value="0.23" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_gray_smile.xml" value="0.165" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/ic_my_location_btn_91dp.xml" value="0.165" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/round_text_button.xml" value="0.165" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/round_top.xml" value="0.209" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/drawable/round_top_12dp.xml" value="0.165" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_account.xml" value="0.264" />
@@ -20,7 +24,7 @@
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_map.xml" value="0.25" />
-        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_post.xml" value="0.1875" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_post.xml" value="0.2" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_profile_edit.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/activity_user_profile.xml" value="0.1109375" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/fragment_block.xml" value="0.25364583333333335" />
@@ -30,6 +34,7 @@
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/item_feed.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/item_like_feed.xml" value="0.1" />
         <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/item_map_feed.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/shjung/AndroidStudioProjects/Tripper/app/src/main/res/layout/item_user_profile.xml" value="0.23541666666666666" />
       </map>
     </option>
   </component>

@@ -54,29 +54,29 @@ class HomeFeedRVAdapter(val context: Context) : ListAdapter<FeedData, HomeFeedRV
             binding.itemFeedHashtagTv.text = feedData.travelHashtag
             when (feedData.travelScore) {
                 "별로에요" -> {
-                    binding.itemFeedScoreIv.setImageResource(R.drawable.ic_verybad_29dp)
-                    binding.itemFeedScoreTv.text = "별로에요"
-                    binding.itemFeedScoreTv.setTextColor(ContextCompat.getColor(context, R.color.main))
+                    binding.itemFeedRateIv.setImageResource(R.drawable.ic_verybad_29dp)
+                    binding.itemFeedRateTv.text = "별로에요"
+                    binding.itemFeedRateTv.setTextColor(ContextCompat.getColor(context, R.color.main))
                 }
                 "도움되지 않았어요" -> {
-                    binding.itemFeedScoreIv.setImageResource(R.drawable.ic_bad_29dp)
-                    binding.itemFeedScoreTv.text = "도움되지 않았어요"
-                    binding.itemFeedScoreTv.setTextColor(ContextCompat.getColor(context, R.color.main))
+                    binding.itemFeedRateIv.setImageResource(R.drawable.ic_bad_29dp)
+                    binding.itemFeedRateTv.text = "도움되지 않았어요"
+                    binding.itemFeedRateTv.setTextColor(ContextCompat.getColor(context, R.color.main))
                 }
                 "그저 그래요" -> {
-                    binding.itemFeedScoreIv.setImageResource(R.drawable.ic_nomal_29dp)
-                    binding.itemFeedScoreTv.text = "그저 그래요"
-                    binding.itemFeedScoreTv.setTextColor(ContextCompat.getColor(context, R.color.main))
+                    binding.itemFeedRateIv.setImageResource(R.drawable.ic_nomal_29dp)
+                    binding.itemFeedRateTv.text = "그저 그래요"
+                    binding.itemFeedRateTv.setTextColor(ContextCompat.getColor(context, R.color.main))
                 }
                 "도움되었어요!" -> {
-                    binding.itemFeedScoreIv.setImageResource(R.drawable.ic_good_29dp)
-                    binding.itemFeedScoreTv.text = "도움되었어요!"
-                    binding.itemFeedScoreTv.setTextColor(ContextCompat.getColor(context, R.color.main))
+                    binding.itemFeedRateIv.setImageResource(R.drawable.ic_good_29dp)
+                    binding.itemFeedRateTv.text = "도움되었어요!"
+                    binding.itemFeedRateTv.setTextColor(ContextCompat.getColor(context, R.color.main))
                 }
                 "최고의 여행!" -> {
-                    binding.itemFeedScoreIv.setImageResource(R.drawable.ic_verygood_29dp)
-                    binding.itemFeedScoreTv.text = "최고의 여행!"
-                    binding.itemFeedScoreTv.setTextColor(ContextCompat.getColor(context, R.color.main))
+                    binding.itemFeedRateIv.setImageResource(R.drawable.ic_verygood_29dp)
+                    binding.itemFeedRateTv.text = "최고의 여행!"
+                    binding.itemFeedRateTv.setTextColor(ContextCompat.getColor(context, R.color.main))
                 }
             }
 

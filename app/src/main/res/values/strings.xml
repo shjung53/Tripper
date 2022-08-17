@@ -23,7 +23,7 @@
     <string name="defaultId">id</string>
     <string name="item_feed_default_title">여행 다녀왔습니다!</string>
     <string name="item_feed_default_hashtag">#여행 #여기저기</string>
-    <string name="item_feed_default_score">아직 평점이 없어요</string>
+    <string name="item_feed_default_rate">아직 평점이 없어요</string>
 
 <!--    장소추가-->
     <string name="activity_add_place_guide_text">장소검색(두 글자 이상 입력)</string>
@@ -55,6 +55,8 @@
 
 <!--    지도 검색-->
     <string name="searchArea">여행 지역 검색</string>
+    <string name="default_rate">아직 평점이 없어요</string>
+    <string name="before_rating">어땠나요?</string>
 
 
 </resources>
